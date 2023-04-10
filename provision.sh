@@ -1,7 +1,7 @@
 #!/bin/zsh
 
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH/themes/spaceship-prompt"
-ln -s "$ZSH/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH/themes/spaceship.zsh-theme"
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$HOME/.oh-my-zsh/themes/spaceship-prompt"
+ln -s "$HOME/.oh-my-zsh/themes/spaceship-prompt/spaceship.zsh-theme" "$HOME/.oh-my-zsh/themes/spaceship.zsh-theme"
 sed -i '11s/ZSH_THEME="devcontainers"/ZSH_THEME="spaceship"/g' ~/.zshrc
 echo 'SPACESHIP_PROMPT_ORDER=(
   user          # Username section
