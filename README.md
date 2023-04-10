@@ -4,6 +4,6 @@
 
 1. Sera configurado o tema do ZSH spaceship
 2. ZInit sera instalado para instalar 3 plugins
-  * zinit light zdharma/fast-syntax-highlighting
-  * zinit light zsh-users/zsh-autosuggestions
-  * zinit light zsh-users/zsh-completions 
+   * zinit light zdharma/fast-syntax-highlighting
+   * zinit light zsh-users/zsh-autosuggestions
+   * zinit light zsh-users/zsh-completions 
