@@ -18,6 +18,8 @@
 
       ***Adiciona milhares de completitions para ferramentas comuns como Yarn, Homebrew, NVM, Node, etc, para você precisar apenas apertar TAB para completar comandos***
 
+1. Muda o shell do usuário logado para Zsh
+
 ## Instalação automática
 
 ``` bash

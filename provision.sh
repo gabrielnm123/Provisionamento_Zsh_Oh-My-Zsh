@@ -44,3 +44,18 @@ echo 'zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions' | cat >> ~/.zshrc
 source ~/.zshrc
+
+## Mudando o shell do usuário logado para Zsh
+
+# Obtém o nome de usuário atual
+username=$(whoami)
+
+# Obtém o caminho do shell Zsh
+zsh_path=$(which zsh)
+
+# Altera o shell do usuário no arquivo /etc/passwd
+sudo usermod --shell $zsh_path $username
+
+# Notifica o usuário
+echo "O shell padrão do usuário $username foi alterado para Zsh."
+echo "Por favor, faça logout e login novamente para usar o novo shell."
