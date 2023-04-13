@@ -2,7 +2,7 @@
 
 # Instala dependencias
 sudo apt update
-sudo apt install -y zsh curl
+sudo apt install -y zsh curl git
 
 # Instala Oh My Zsh
 curl -fsSLO https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh && sh install.sh
