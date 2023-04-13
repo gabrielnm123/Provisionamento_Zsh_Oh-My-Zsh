@@ -1,4 +1,11 @@
-#!/bin/zsh
+#!/bin/bash
+
+# Instala Zsh
+sudo apt update
+sudo apt install -y zsh
+
+# Instala Oh My Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Clona spaceship-prompt, tema para zsh, para $HOME/.oh-my-zsh/themes/spaceship-prompt
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$HOME/.oh-my-zsh/themes/spaceship-prompt"
@@ -24,7 +31,6 @@ echo 'SPACESHIP_PROMPT_ORDER=(
 )
 SPACESHIP_USER_SHOW=always
 SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "' | cat >> ~/.zshrc
 
 # Bixando e instalando o ZInit
@@ -38,10 +44,3 @@ echo 'zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions' | cat >> ~/.zshrc
 source ~/.zshrc
-
-# Instala Pyenv
-curl https://pyenv.run | zsh
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(pyenv init -)"' >> ~/.zshrc
-exec "$SHELL"

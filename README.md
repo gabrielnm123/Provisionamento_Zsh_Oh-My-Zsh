@@ -1,8 +1,9 @@
-# Provisionamento_CodeSpaces-ZSH_PYENV
+# Provisionamento_Zsh_Oh-My-Zsh
 
 ## Ao executar o arquivo provision.sh
 
-1. Sera configurado o tema spaceship para ZSH
+1. Será instalado Zsh e Oh My Zsh
+1. Será configurado o tema spaceship para Zsh
 1. ZInit será instalado para configurar 3 plugins:
 
    * zdharma/fast-syntax-highlighting
@@ -16,5 +17,3 @@
    * zsh-users/zsh-completions
 
       ***Adiciona milhares de completitions para ferramentas comuns como Yarn, Homebrew, NVM, Node, etc, para você precisar apenas apertar TAB para completar comandos***
-
-1. O Pyenv também será instalado
