@@ -22,5 +22,5 @@
 
 ``` bash
 sudo apt update && sudo apt install -y curl
-curl -fsSLO https://raw.githubusercontent.com/gabrielnm123/Provisionamento_CodeSpaces-ZSH_PYENV/main/provision.sh && sh provision.sh
+curl -fsSLO https://raw.githubusercontent.com/gabrielnm123/Provisionamento_CodeSpaces-ZSH_PYENV/main/provision.sh && bash provision.sh
 ```
