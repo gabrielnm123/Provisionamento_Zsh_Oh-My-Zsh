@@ -17,3 +17,10 @@
    * zsh-users/zsh-completions
 
       ***Adiciona milhares de completitions para ferramentas comuns como Yarn, Homebrew, NVM, Node, etc, para você precisar apenas apertar TAB para completar comandos***
+
+## Instalação automática
+
+``` bash
+sudo apt update && sudo apt install -y curl
+curl -fsSLO https://raw.githubusercontent.com/gabrielnm123/Provisionamento_CodeSpaces-ZSH_PYENV/main/provision.sh && sh provision.sh
+```
