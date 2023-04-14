@@ -2,13 +2,14 @@
 
 # Instala dependencias
 sudo apt update
-sudo apt install -y zsh curl git
+sudo apt install -y zsh wget git
 
 # Instala Oh My Zsh
-curl -fsSLO https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh && bash install.sh
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh && bash install.sh
+rm install.sh
 
 # Clona spaceship-prompt, tema para zsh, para $HOME/.oh-my-zsh/themes/spaceship-prompt
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$HOME/.oh-my-zsh/themes/spaceship-prompt"
+git clone https://github.com/denysdovhan/spaceship-prompt "$HOME/.oh-my-zsh/themes/spaceship-prompt"
 
 # Cria link simbólico do arquivo spaceship.zsh-theme, que esta na pasta clonada, para a pasta pai do repositorio
 ln -s "$HOME/.oh-my-zsh/themes/spaceship-prompt/spaceship.zsh-theme" "$HOME/.oh-my-zsh/themes/spaceship.zsh-theme"

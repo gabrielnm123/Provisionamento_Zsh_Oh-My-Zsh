@@ -23,6 +23,7 @@
 ## Instalação automática
 
 ``` bash
-sudo apt update && sudo apt install -y curl
-curl -fsSLO https://raw.githubusercontent.com/gabrielnm123/Provisionamento_Zsh_Oh-My-Zsh/main/provision.sh && bash provision.sh
+sudo apt update && sudo apt install -y wget
+wget https://raw.githubusercontent.com/gabrielnm123/Provisionamento_Zsh_Oh-My-Zsh/main/provision.sh && bash provision.sh
+rm provision.sh
 ```
