@@ -1,4 +1,4 @@
-# Provisionamento_Zsh_Oh-My-Zsh_para_Ubuntu
+# Provisionamento_Zsh_Oh-My-Zsh
 
 ## Ao executar o arquivo provision.sh
 
