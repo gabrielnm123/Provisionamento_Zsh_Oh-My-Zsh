@@ -24,5 +24,5 @@
 
 ``` bash
 sudo apt update && sudo apt install -y curl
-curl -fsSLO https://raw.githubusercontent.com/gabrielnm123/Provisionamento_CodeSpaces-ZSH_PYENV/main/provision.sh && bash provision.sh
+curl -fsSLO https://raw.githubusercontent.com/gabrielnm123/Provisionamento_Zsh_Oh-My-Zsh/main/provision.sh?token=GHSAT0AAAAAACBM66WWFQGRIGK5DYC2XGLUZBZHRKA && bash provision.sh
 ```
