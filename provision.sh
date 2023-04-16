@@ -32,6 +32,7 @@ echo 'SPACESHIP_PROMPT_ORDER=(
 )
 SPACESHIP_USER_SHOW=always
 SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "' | cat >> ~/.zshrc
 
 # Bixando e instalando o ZInit

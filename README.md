@@ -27,3 +27,5 @@ sudo apt update && sudo apt install -y wget
 wget https://raw.githubusercontent.com/gabrielnm123/Provisionamento_Zsh_Oh-My-Zsh/main/provision.sh && bash provision.sh
 rm provision.sh
 ```
+
+> Se conseguir usar a fonte [Fira Code](https://github.com/tonsky/FiraCode/releases), vai poder usar diversos ícones dos quais são utilizados nesse tema.
