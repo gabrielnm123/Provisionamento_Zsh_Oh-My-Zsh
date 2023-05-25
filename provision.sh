@@ -15,7 +15,7 @@ git clone https://github.com/denysdovhan/spaceship-prompt "$HOME/.oh-my-zsh/them
 ln -s "$HOME/.oh-my-zsh/themes/spaceship-prompt/spaceship.zsh-theme" "$HOME/.oh-my-zsh/themes/spaceship.zsh-theme"
 
 # Troca o tema de devcontainers para spaceship
-sed -i '11s/ZSH_THEME="devcontainers"/ZSH_THEME="spaceship"/g' ~/.zshrc
+sed -i '11s/ZSH_THEME=*/ZSH_THEME="spaceship"/g' ~/.zshrc
 
 # Configurando o spaceship, desabilitando algumas funções que requerem mais processamento e que podem fazer o carregamento das pastas demorarem
 echo 'SPACESHIP_PROMPT_ORDER=(
