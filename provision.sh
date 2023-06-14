@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Instala dependencias
-apt update
-apt install -y zsh wget git
+sudo apt update
+sudo apt install -y zsh wget git
 
 # Instala Oh My Zsh
 wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh && bash install.sh
