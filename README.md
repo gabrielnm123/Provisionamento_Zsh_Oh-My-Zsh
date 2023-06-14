@@ -23,7 +23,7 @@
 ## Instalação automática
 
 ``` bash
-wget https://raw.githubusercontent.com/gabrielnm123/Provisionamento_Zsh_Oh-My-Zsh/main/provision.sh && bash provision.sh
+wget https://raw.githubusercontent.com/gabrielnm123/Provisionamento_Zsh_Oh-My-Zsh/main/provision.sh && sudo ./provision.sh
 rm provision.sh
 ```
 
