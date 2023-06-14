@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Instala dependencias
-sudo apt update
-sudo apt install -y zsh wget git
+apt update
+apt install -y zsh wget git
 
 # Instala Oh My Zsh
 wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh && bash install.sh
@@ -56,7 +56,7 @@ username=$(whoami)
 zsh_path=$(which zsh)
 
 # Altera o shell do usuário no arquivo /etc/passwd
-sudo usermod --shell $zsh_path $username
+usermod --shell $zsh_path $username
 
 # Notifica o usuário
 echo "O shell padrão do usuário $username foi alterado para Zsh."
