@@ -25,7 +25,7 @@
 ``` bash
 wget https://raw.githubusercontent.com/gabrielnm123/Provisionamento_Zsh_Oh-My-Zsh/main/provision.sh 
 chmod +x provision.sh
-sudo ./provision.sh
+./provision.sh
 rm provision.sh
 ```
 
