@@ -43,7 +43,7 @@ username=$(whoami)
 zsh_path=$(which zsh)
 
 # Altera o shell do usuário no arquivo /etc/passwd
-usermod --shell $zsh_path $username
+sudo usermod --shell $zsh_path $username
 
 # Notifica o usuário
 echo "O shell padrão do usuário $username foi alterado para Zsh."
