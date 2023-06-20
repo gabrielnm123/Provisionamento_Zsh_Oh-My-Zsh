@@ -2,11 +2,10 @@
 
 # Instala dependencias
 sudo apt update
-sudo apt install -y zsh wget git
+sudo apt install -y zsh curl git
 
 # Instala Oh My Zsh
-wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh && bash install.sh
-rm install.sh
+curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
 
 # Clona spaceship-prompt, tema para zsh, para $HOME/.oh-my-zsh/themes/spaceship-prompt
 git clone https://github.com/denysdovhan/spaceship-prompt "$HOME/.oh-my-zsh/themes/spaceship-prompt"
