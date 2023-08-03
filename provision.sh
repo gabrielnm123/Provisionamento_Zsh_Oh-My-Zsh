@@ -5,22 +5,22 @@ sudo apt update
 sudo apt install -y zsh curl git
 
 # Instala Oh My Zsh
-curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# Clona spaceship-prompt, tema para zsh, para $HOME/.oh-my-zsh/themes/spaceship-prompt
-git clone https://github.com/denysdovhan/spaceship-prompt "$HOME/.oh-my-zsh/themes/spaceship-prompt"
+# Clona spaceship-prompt, tema para zsh, para $ZSH_CUSTOM/themes/spaceship-prompt
+git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 
-# Cria link simbólico do arquivo spaceship.zsh-theme, que esta na pasta clonada, para a pasta pai do repositorio
-ln -s "$HOME/.oh-my-zsh/themes/spaceship-prompt/spaceship.zsh-theme" "$HOME/.oh-my-zsh/themes/spaceship.zsh-theme"
+# Cria link simbólico do arquivo spaceship.zsh-theme, que esta na pasta clonada, para a pasta themes do $ZSH_CUSTOM
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 # Troca o tema de devcontainers para spaceship
 sed -i '11s/.*/ZSH_THEME="spaceship"/' ~/.zshrc
 
-# Configurando o spaceship, desabilitando algumas funções que requerem mais processamento e que podem fazer o carregamento das pastas demorarem
+# Configurando o spaceship
 echo 'SPACESHIP_USER_SHOW=always
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
-SPACESHIP_CHAR_SUFFIX=" "' | cat >> ~/.zshrc
+SPACESHIP_CHAR_SUFFIX=" "' | cat - ~/.zshrc > temp && mv temp ~/.zshrc
 
 # Bixando e instalando o ZInit
 yes | zsh -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
