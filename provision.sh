@@ -23,7 +23,7 @@ SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "' | cat - ~/.zshrc > temp && mv temp ~/.zshrc
 
 # Bixando e instalando o ZInit
-yes | zsh -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+zsh -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
 # Com o ZInit será instalado três plugins
 # zdharma/fast-syntax-highlighting: Adiciona syntax highlighting na hora da escrita de comandos que # facilita principalmente em reconhecer comandos que foram digitados de forma incorreta;
