@@ -23,7 +23,7 @@
 ## Instalação automática
 
 ``` bash
-curl https://raw.githubusercontent.com/gabrielnm123/Provisionamento_Zsh_Oh-My-Zsh/main/provision.sh | $SHELL
+curl -s https://raw.githubusercontent.com/gabrielnm123/Provisionamento_Zsh_Oh-My-Zsh/main/provision.sh | sudo -E bash
 ```
 
 > Se conseguir usar a fonte [Fira Code](https://github.com/tonsky/FiraCode/releases), vai poder usar diversos ícones dos quais são utilizados nesse tema.
