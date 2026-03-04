@@ -20,7 +20,7 @@
 
 1. Muda o shell do usuário logado para Zsh
 
-## Instalação automática
+## Instalação automática sem funcionar. Executar comandos diretamente do script
 
 ``` bash
 curl -s -H "Cache-Control: no-cache" https://raw.githubusercontent.com/gabrielnm123/Provisionamento_Zsh_Oh-My-Zsh/main/provision.sh | bash

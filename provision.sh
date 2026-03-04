@@ -76,7 +76,7 @@ fi
 
 # --- 6. Alteração do Shell Padrão ---
 if [ "$(basename "$SHELL")" != "zsh" ]; then
-  echo "셸 Alterando o shell padrão para Zsh. Você precisará fornecer sua senha."
+  echo "셸 Alterando o shell padrão para Zsh. Você precisará fornecer sua senha." # hora que pede a senha pula sem esperar eu colocar a senha e encerra o script
   chsh -s "$(which zsh)"
   if [ $? -eq 0 ]; then
     echo "✅ Shell padrão alterado para Zsh com sucesso."
